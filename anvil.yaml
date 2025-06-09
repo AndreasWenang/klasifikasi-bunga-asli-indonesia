@@ -1,9 +1,15 @@
 allow_embedding: false
-name: Classic 1
-package_name: Classic_1
+metadata: {logo_img: 'asset:c7e84d68cd4b3432a294e9b775328ee64bcbdfc4_s2_n2.png'}
+name: Klasifikasi Bunga Asli Indonesia
+package_name: Klasifikasi_Bunga_Asli_Indonesia
 runtime_options:
   client_version: '3'
   server_spec: {base: python310-minimal}
   server_version: python3-sandbox
   version: 2
-services: []
+services:
+- client_config: {}
+  server_config: {}
+  source: /runtime/services/tables.yml
+startup_form: Form1
+uplink_visible: true

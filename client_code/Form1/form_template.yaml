@@ -1,0 +1,40 @@
+components:
+- layout_properties: {grid_position: 'LFAPFY,VINLFQ'}
+  name: label_1
+  properties: {align: center, bold: true, font_size: 30, text: Identifikasi Bunga Asli Indonesia}
+  type: Label
+- layout_properties: {grid_position: 'VZCCAG,XIXMRB'}
+  name: label_2
+  properties:
+    spacing:
+      margin: [null, 0, null, null]
+    text: 'Upload Gambar:'
+  type: Label
+- data_bindings:
+  - {code: '', property: file, writeback: false}
+  - {code: '', property: files, writeback: false}
+  event_bindings: {change: file_loader_1_change}
+  layout_properties: {grid_position: 'VZCCAG,PDYDPH'}
+  name: file_loader_1
+  properties: {file_types: ''}
+  type: FileLoader
+- event_bindings: {click: button_1_click}
+  layout_properties: {grid_position: 'VZCCAG,XTXFIR'}
+  name: button_1
+  properties:
+    spacing:
+      margin: [null, 0, null, null]
+    text: Proses
+  type: Button
+- layout_properties: {grid_position: 'AEKHSJ,UBJXPW'}
+  name: label_3
+  properties: {text: 'Hasil:'}
+  type: Label
+- layout_properties: {grid_position: 'AEKHSJ,LXKRTH'}
+  name: label_4
+  properties: {}
+  type: Label
+container:
+  properties: {col_widths: '{"XIXMRB":15,"PDYDPH":45,"UBJXPW":10,"LXKRTH":50}'}
+  type: ColumnPanel
+is_package: true
