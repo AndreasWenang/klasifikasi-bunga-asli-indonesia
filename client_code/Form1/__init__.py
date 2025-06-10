@@ -11,7 +11,6 @@ class Form1(Form1Template):
 
   def file_loader_1_change(self, file, **event_args):
     """This method is called when a new file is loaded into this FileLoader"""
-    anvil.server.call("Klasifikasi")
     pass
 
   def button_1_click(self, **event_args):
