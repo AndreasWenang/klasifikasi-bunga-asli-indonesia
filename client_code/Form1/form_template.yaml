@@ -40,6 +40,6 @@ components:
   properties: {}
   type: Label
 container:
-  properties: {col_widths: '{"XIXMRB":15,"PDYDPH":45,"UBJXPW":10,"LXKRTH":50}'}
+  properties: {col_widths: '{"XIXMRB":15,"PDYDPH":45,"UBJXPW":5,"LXKRTH":55}'}
   type: ColumnPanel
 is_package: true
